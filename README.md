@@ -2,16 +2,19 @@
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-Welcome to the ultimate list of resources for formal verification techniques and tools. This repository aims to provide an organized collection of high-quality resources to help professionals, researchers, and enthusiasts stay updated and advance their knowledge in the field.
+Welcome to the ultimate list of resources for formal verification/model checking techniques and tools. This repository aims to provide an organized collection of high-quality resources to help professionals, researchers, and enthusiasts stay updated and advance their knowledge in the field.
 
 Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) and [awesome-open-hardware-verification](https://github.com/ben-marshall/awesome-open-hardware-verification)!
 
 ## Table of Contents
 
-* [Tools](#tools) which contain or implement verification related functionality
-* [Languages](#languages) - Languages with good ability to use formal type safety
-* [Proof Assistants](#proof-assistants) - Interactive theorem provers used to prove properties of programs.
-* [Projects](#projects) - Projects involving provably correct code.
+* Software
+  * [Tools](#tools) which contain or implement verification related functionality
+  * [Languages](#languages) - Languages with good ability to use formal type safety
+* Hardware
+  * [Tools](#hard-tools) which contain or implement verification related functionality
+  * [Languages](#hard-languages) - Languages with good ability to use formal type safety
+
 * [Books](#books) - Textbooks commonly referred to
 * [Courses](#courses) - Online courses (YouTube, university courses)
 * [Testbench Frameworks](#frameworks) which make writing testbenches easier
@@ -19,44 +22,105 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 * [Conferences](#conferences) where new work on open source hardware verification is talked about
 * [More Links](#more) - Video presentations about formal proof of code topics
 
-## Tools
 
-### Formal Verification
+## Software verification
 
-- [Symbiyosys](#symbiyosys) - Tool suite for formal verification of RTL designs.
-- [riscv-formal](#riscv-formal) - RISC-V formal verification framework.
-- [MCY](#mcy) - Testbench coverage tool.
-- [EBMC / CBMC](#ebmc--cbmc) - Model checker for C/C++ and hardware designs.
+### Tools/Proof Assistants
 
-### Simulation
+#### Formal Verification
 
-- [Verilator](#verilator) - Verilog Simulator.
-- [Icarus Verilog](#icarus-verilog) - Icarus Verilog Simulator.
+- [Panther](https://github.com/ElNiak/PANTHER) - This tool presents a novel approach to bolstering network protocol verification by integrating the Shadow network simulator with the Ivy formal verification tool to check time properties. Furthermore, it extends Ivy’s capabilities with a dedicated time module, enabling the verification of complex quantitative-time properties. 
+* [ivy](https://github.com/microsoft/ivy) - IVy is a research tool/language intended to allow interactive development of protocols and their proofs of correctness and to provide a platform for developing and experimenting with automated proof techniques.
+- [Uppaal](https://uppaal.org/) - Uppaal is an integrated tool environment for modeling, validation and verification of real-time systems modeled as networks of timed automata, extended with data types (bounded integers, arrays, etc.).
+- [BLAST](https://cseweb.ucsd.edu/~rjhala/blast.html) - BLAST is a software model checker for C programs. The goal of BLAST is to be able to check that software satisfies behavioral properties of the interfaces it uses. Blast uses counterexample-driven automatic abstraction refinement to construct an abstract model which is model checked for safety properties. The abstraction is constructed /on-the-fly/, and only to the /required precision/. The BLAST project is supported by the National Science Foundation . 
+- [PRISM](https://www.prismmodelchecker.org/) -  PRISM is a probabilistic model checker, a tool for formal modelling and analysis of systems that exhibit random or probabilistic behaviour. It has been used to analyse systems from many different application domains, including communication and multimedia protocols, randomised distributed algorithms, security protocols, biological systems and many others.
+- [SPIN](https://spinroot.com/spin/whatispin.html) -  Spin is a widely used open-source software verification tool. The tool can be used for the formal verification of multi-threaded software applications. The tool was developed at Bell Labs in the Unix group of the Computing Sciences Research Center, starting in 1980, and has been available freely since 1991. Spin continues to evolve to keep pace with new developments in the field. In April 2002 the tool was awarded the ACM System Software Award. [read more] 
+- [TLA+](https://lamport.azurewebsites.net/tla/tla.html) - TLA+ is a high-level language for modeling programs and systems--especially concurrent and distributed ones.  It's based on the idea that the best way to describe things precisely is with simple mathematics. 
+- [Coq](https://coq.inria.fr/) - Formal proof management system.
+- [Isabelle](https://isabelle.in.tum.de/) - Generic proof assistant.
+- [HOL](https://hol-theorem-prover.org/) - Proof assistant for higher-order logic.
+- [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
+- [K Framework](http://www.kframework.org/index.php/Main_Page) - Rewrite-based executable semantic framework.
+- [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
 
-### Build Systems and Continuous Integration
 
-- [LibreCores CI](#librecores-ci) - Continuous integration service for open hardware.
-- [FuseSoc](#fusesoc) - Package manager and build abstraction tool for FPGA/ASIC development.
-  - [fsva](#fsva) - FuseSoC Verification Automation.
+#### Simulation
 
-### Test / Program / Code Generators
+- [Panther](https://github.com/ElNiak/PANTHER) - This tool presents a novel approach to bolstering network protocol verification by integrating the Shadow network simulator with the Ivy formal verification tool to check time properties. Furthermore, it extends Ivy’s capabilities with a dedicated time module, enabling the verification of complex quantitative-time properties. 
 
-- [AAPG (Automated Assembly Program Generator)](#aapg) - Generator for assembly programs.
-- [riscv-dv](#riscv-dv) - Instruction sequence generator for RISC-V.
-- [rggen](#rggen) - Code generation tool for configuration and status registers.
-- [FORCE-RISCV](#force-riscv) - Instruction sequence generator for RISC-V.
+#### Build Systems and Continuous Integration
 
-### Coverage
+/
 
-- [covered](#covered) - Coverage analysis tool.
+#### Test / Program / Code Generators
 
-### Linting and Parsing
+/
 
-- [svlint](#svlint) - Linter for SystemVerilog.
-- [sv-parser](#sv-parser) - SystemVerilog parser.
-- [Surelog](#surelog-system-verilog-2017-pre-processor-parser) - SystemVerilog pre-processor and parser.
+#### Coverage
 
-## Testbench Frameworks
+- [A Practical Approach to Coverage in Model Checking](https://www.cs.huji.ac.il/~ornak/publications/cav01.pdf) - Scientific paper
+
+#### Linting and Parsing
+
+- [ivy-syntax-highlight](https://github.com/Consensys/ivy-syntax-highlight) - Bare minimum syntax highlight definitions (most likely incomplete) for the Ivy language.
+
+#### Languages
+
+* [ivy](https://kenmcmil.github.io/ivy/) - IVy is a research tool/language intended to allow interactive development of protocols and their proofs of correctness and to provide a platform for developing and experimenting with automated proof techniques.
+- [Caml](https://caml.inria.fr/) - Caml is a general-purpose programming language, designed with program safety and reliability in mind. It is very expressive, yet easy to learn and use. Caml supports functional, imperative, and object-oriented programming styles. It has been developed and distributed by INRIA, a French research institute in computer science and applied mathematics, since 1985. 
+
+## Hardware verification
+
+### Tools
+
+#### Formal Verification
+
+- [Symbiyosys](https://symbiyosys.readthedocs.io/en/latest/quickstart.html#prerequisites) - SymbiYosis a front-end driver program for Yosys-based formal hardware verification flows. SymbiYosys provides flows for the following formal tasks: Bounded verification of safety properties (assertions), Unbounded verification of safety properties, Generation of test benches from cover statements, Verification of liveness properties
+- [riscv-formal](https://github.com/SymbioticEDA/riscv-formal) - A re-usable formal verification framework for RISC-V CPU designs.
+- [MCY](https://github.com/YosysHQ/mcy) - mcy is a new tool to help digital designers and project managers understand and improve testbench coverage. [...] Given a self checking testbench, mcy generates 1000s of mutations by modifying individual signals in a post synthesis netlist. These mutations are then filtered using Formal Verification techniques, keeping only those that can cause an important change in the design’s output. All mutated designs are run against the testbench to check that the testbench will detect and fail for a relevant mutation. The testbench can then be improved to get 100% complete coverage
+- [EBMC / CBMC](http://www.cprover.org/ebmc/) - EBMC is a Model Checker for hardware designs. It includes both bounded and unbounded analysis, i.e., it can both discover bugs and is also able to prove the absence of bugs. It can read Netlists (ISCAS89 format), Verilog, System Verilog and SMV files. Properties can be given in LTL or a fragment of System Verilog Assertions
+* [seL4](https://sel4.systems/) - Operating-system kernel with an end-to-end proof of implementation correctness and security enforcement.
+  * [brochure](https://sel4.systems/Info/Docs/seL4-brochure.pdf)
+  * [white paper](https://sel4.systems/Info/Docs/GD-NICTA-whitepaper.pdf)
+* [Certikos](http://flint.cs.yale.edu/certikos/) - Certified Kit Operating System.
+  * [Certified OS Kernels](http://flint.cs.yale.edu/certikos/)
+* [Compcert](http://compcert.inria.fr/) - Formally verified compiler for C.
+  * [C compiler](http://compcert.inria.fr/download.html)
+* [Bedrock](http://plv.csail.mit.edu/bedrock/) - Coq library for verification.
+  * [tutorial pdf](http://plv.csail.mit.edu/bedrock/tutorial.pdf)
+* [HACMS](https://www.darpa.mil/program/high-assurance-cyber-military-systems) - High-Assurance Cyber Military Systems.
+  * [more Darpa "formal" tagged links](https://www.darpa.mil/tag-list?tt=78)
+* [Genode](http://genode.org/) - Novel OS architecture.
+
+  
+#### Simulation
+
+- [Verilator](https://www.veripool.org/projects/verilator/wiki/Intro) - Verilator is  "the fastest free Verilog HDL simulator". From a verification perspective it supports *line coverage*, *signal toggle coverage* and limited specification of *functional coverage* using SystemVerilog Assertions. It also allows one to write testbenches in C++ or SystemC.
+- [Icarus Verilog](https://github.com/steveicarus/iverilog) -The excellent Icarus Verilog simulator. Slower than Verilator, but it supports full 4-state simulation (i.e. X's and Z's).
+
+#### Build Systems and Continuous Integration
+
+- [LibreCores CI](https://www.librecores.org/static/librecores-ci) - LibreCores CI is a service, which provides Continuous Integration of projects being hosted on LibreCores. The objective of the service is to improve the contributor experience and to increase trust to projects by providing automated testing and health metrics of the projects.
+- [FuseSoc](https://github.com/olofk/fusesoc) - FuseSoC is an award-winning package manager and a set of build tools for HDL (Hardware Description Language) code. Its main purpose is to increase reuse of IP (Intellectual Property) cores and be an aid for creating, building and simulating SoC solutions
+
+#### Test / Program / Code Generators
+
+- [AAPG (Automated Assembly Program Generator)](https://gitlab.com/shaktiproject/tools/aapg) - Generator for assembly programs.
+- [riscv-dv](https://github.com/chipsalliance/riscv-dv) - Instruction sequence generator for RISC-V.
+- [rggen](https://github.com/rggen/rggen) - Code generation tool for configuration and status registers.
+- [FORCE-RISCV](https://github.com/openhwgroup/force-riscv) - Instruction sequence generator for RISC-V.
+
+#### Coverage
+
+- [covered](https://github.com/anders-code/verilog-covered) - Coverage analysis tool.
+
+#### Linting and Parsing
+
+- [svlint](https://github.com/dalance/svlint) - Linter for SystemVerilog.
+- [sv-parser](https://github.com/dalance/sv-parser) - SystemVerilog parser.
+- [Surelog](https://github.com/chipsalliance/Surelog) - SystemVerilog pre-processor and parser.
+
+#### Testbench Frameworks
 
 - [cocotb](#cocotb) - Python based testbench environment for many simulators.
   - [python-uvm](#python-uvm) - A port of UVM 1.2 to Python and cocotb.
@@ -70,7 +134,7 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 - [V3](#v3) - Verification framework.
 - [ROHD Verification Framework](#rohd-verification-framework) - Hardware verification framework upon ROHD for building and executing testbenches.
 
-## Components / VIPs
+#### Components / VIPs
 
 - [uvm_axi](#uvm_axi) - AXI bus verification IP.
 - [AXI Bus Formal VIP](#axi-bus-formal-vip) - Formal verification IP for AXI bus.
@@ -80,6 +144,21 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 - [USB 1.1 Test Suite](#antmicro-usb-test-suite) - Test suite for USB 1.1.
 - [Cocotb Verification IPs](#cocotb-ips) - Various cocotb packages for common interfaces: AXI/Ethernet/PCIE.
 - [RISC-V-TLM](#risc-v-tlm) - A SystemC transaction level model of RISC-V.
+
+#### Languages
+
+* [Idris](https://www.idris-lang.org/) - General purpose pure functional programming language with dependent types.
+  * [Idris docs](http://docs.idris-lang.org/en/latest/)
+  * [Idris tutorial](http://docs.idris-lang.org/en/latest/tutorial/index.html#tutorial-index)
+  * [Theorem proving with Idris tutorial](http://docs.idris-lang.org/en/latest/proofs/index.html)
+* [Agda](http://wiki.portal.chalmers.se/agda/pmwiki.php) - Dependently typed functional programming language.
+  * [Agda Github](https://github.com/agda/agda)
+  * [Agda User Manual](http://agda.readthedocs.io/en/v2.5.2/)
+* [UR/Web](http://www.impredicative.com/ur/) - Ur plus a special standard library for dynamic web applications.
+* [Haskell](https://www.haskell.org/) - An advanced, purely functional programming language.
+* [Liquid Haskell](https://ucsd-progsys.github.io/liquidhaskell-blog/) - Refines Haskell's types with logical predicates for compile-time property enforcement.
+* [Elm](http://elm-lang.org/) - Type-safe functional programming language for declaratively creating web browser-based graphical user interfaces.
+
 
 ## Guides & Blogs
 
@@ -93,52 +172,6 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 - [OSDA](#osda) - Open Source Digital Architecture workshop.
 - [CHIPS Alliance Workshop on Open Source Design Verification](#chips-alliance-workshop-on-open-source-design-verification) - Workshop on open source design verification.
 - [Workshop on Open-Source EDA Technology (WOSET)](#workshop-on-open-source-eda-technology-woset) - Workshop on open-source EDA technology.
-
-## Languages
-
-* [Idris](https://www.idris-lang.org/) - General purpose pure functional programming language with dependent types.
-  * [Idris docs](http://docs.idris-lang.org/en/latest/)
-  * [Idris tutorial](http://docs.idris-lang.org/en/latest/tutorial/index.html#tutorial-index)
-  * [Theorem proving with Idris tutorial](http://docs.idris-lang.org/en/latest/proofs/index.html)
-* [Agda](http://wiki.portal.chalmers.se/agda/pmwiki.php) - Dependently typed functional programming language.
-  * [Agda Github](https://github.com/agda/agda)
-  * [Agda User Manual](http://agda.readthedocs.io/en/v2.5.2/)
-* [UR/Web](http://www.impredicative.com/ur/) - Ur plus a special standard library for dynamic web applications.
-* [Haskell](https://www.haskell.org/) - An advanced, purely functional programming language.
-* [Liquid Haskell](https://ucsd-progsys.github.io/liquidhaskell-blog/) - Refines Haskell's types with logical predicates for compile-time property enforcement.
-* [Elm](http://elm-lang.org/) - Type-safe functional programming language for declaratively creating web browser-based graphical user interfaces.
-* [ivy](https://kenmcmil.github.io/ivy/) - IVy is a research tool/language intended to allow interactive development of protocols and their proofs of correctness and to provide a platform for developing and experimenting with automated proof techniques.
-
-  
-## Proof Assistants
-
-* [Coq](https://coq.inria.fr/) - Formal proof management system.
-  * https://github.com/Ptival/PeaCoq
-  * https://math-comp.github.io/mcb/
-* [Isabelle](https://isabelle.in.tum.de/) - Generic proof assistant.
-  * [overview](https://isabelle.in.tum.de/overview.html)
-* [HOL](https://hol-theorem-prover.org/) - Proof assistant for higher-order logic.
-  * [Other HOLS](https://hol-theorem-prover.org/other-hols.html)
-* [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
-  * [Online version](https://leanprover.github.io/live/latest/)
-* [K Framework](http://www.kframework.org/index.php/Main_Page) - Rewrite-based executable semantic framework.
-  * [K Tutorial](http://www.kframework.org/index.php/K_Tutorial) by [Grigore Rosu](https://github.com/grosu), [video playlist](https://www.youtube.com/watch?v=eSaIKHQOo4c&list=PLx_U8qR-tMtLQEDPvVk1y9gTIdUIWGaQd)
-* [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
-
-## Projects
-
-* [seL4](https://sel4.systems/) - Operating-system kernel with an end-to-end proof of implementation correctness and security enforcement.
-  * [brochure](https://sel4.systems/Info/Docs/seL4-brochure.pdf)
-  * [white paper](https://sel4.systems/Info/Docs/GD-NICTA-whitepaper.pdf)
-* [Certikos](http://flint.cs.yale.edu/certikos/) - Certified Kit Operating System.
-  * [Certified OS Kernels](http://flint.cs.yale.edu/certikos/)
-* [Compcert](http://compcert.inria.fr/) - Formally verified compiler for C.
-  * [C compiler](http://compcert.inria.fr/download.html)
-* [Bedrock](http://plv.csail.mit.edu/bedrock/) - Coq library for verification.
-  * [tutorial pdf](http://plv.csail.mit.edu/bedrock/tutorial.pdf)
-* [HACMS](https://www.darpa.mil/program/high-assurance-cyber-military-systems) - High-Assurance Cyber Military Systems.
-  * [more Darpa "formal" tagged links](https://www.darpa.mil/tag-list?tt=78)
-* [Genode](http://genode.org/) - Novel OS architecture.
 
 ## Books
 
