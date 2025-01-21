@@ -72,7 +72,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 * [Symbiyosys](https://symbiyosys.readthedocs.io/en/latest/quickstart.html#prerequisites) - SymbiYosis a front-end driver program for Yosys-based formal hardware verification flows. SymbiYosys provides flows for the following formal tasks: Bounded verification of safety properties (assertions), Unbounded verification of safety properties, Generation of test benches from cover statements, Verification of liveness properties.
 * [riscv-formal](https://github.com/SymbioticEDA/riscv-formal) - A re-usable formal verification framework for RISC-V CPU designs.
-* [MCY](https://github.com/YosysHQ/mcy) - mcy is a new tool to help digital designers and project managers understand and improve testbench coverage. Given a self checking testbench, mcy generates 1000s of mutations by modifying individual signals in a post synthesis netlist. These mutations are then filtered using Formal Verification techniques, keeping only those that can cause an important change in the design's output. All mutated designs are run against the testbench to check that the testbench will detect and fail for a relevant mutation. The testbench can then be improved to get 100% complete coverage.
+* [MCY](https://github.com/YosysHQ/mcy) - MCY is a new tool to help digital designers and project managers understand and improve testbench coverage. Given a self checking testbench, mcy generates 1000s of mutations by modifying individual signals in a post synthesis netlist. These mutations are then filtered using Formal Verification techniques, keeping only those that can cause an important change in the design's output. All mutated designs are run against the testbench to check that the testbench will detect and fail for a relevant mutation. The testbench can then be improved to get 100% complete coverage.
 * [EBMC / CBMC](http://www.cprover.org/ebmc/) - EBMC is a Model Checker for hardware designs. It includes both bounded and unbounded analysis, i.e., it can both discover bugs and is also able to prove the absence of bugs. It can read Netlists (ISCAS89 format), Verilog, System Verilog and SMV files. Properties can be given in LTL or a fragment of System Verilog Assertions.
 * [seL4](https://sel4.systems/) - Operating-system kernel with an end-to-end proof of implementation correctness and security enforcement.
   * [brochure](https://sel4.systems/Info/Docs/seL4-brochure.pdf)
@@ -90,7 +90,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 #### Simulation
 
 * [Verilator](https://www.veripool.org/projects/verilator/wiki/Intro) - Verilator is  "the fastest free Verilog HDL simulator". From a verification perspective it supports *line coverage*, *signal toggle coverage* and limited specification of *functional coverage* using SystemVerilog Assertions. It also allows one to write testbenches in C++ or SystemC.
-* [Icarus Verilog](https://github.com/steveicarus/iverilog) -The excellent Icarus Verilog simulator. Slower than Verilator, but it supports full 4-state simulation (i.e. X's and Z's).
+* [Icarus Verilog](https://github.com/steveicarus/iverilog) - The excellent Icarus Verilog simulator. Slower than Verilator, but it supports full 4-state simulation (i.e. X's and Z's).
 
 #### Build Systems and Continuous Integration
 
@@ -154,9 +154,9 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 ## Blogs
 
-* [Dan Gisselquist Formal Verification Blogs](#dan-gisselquist-formal-verification-blogs) - Blog posts on formal verification.
-* [Verification Gentleman Blog](#verification-gentleman-blog) - Blog on verification topics.
-* [Bits, Bytes and Gates](#bits-bytes-and-gates) - Blog covering formal verification and hardware design.
+* [Dan Gisselquist Formal Verification Blogs](https://zipcpu.com/formal/formal.html) - Blog posts on formal verification.
+* [Verification Gentleman Blog](https://blog.verificationgentleman.com/) - Blog on verification topics.
+* [Bits, Bytes and Gates](https://bitsbytesgates.com/) - Blog covering formal verification and hardware design.
 
 ## Conferences
 
