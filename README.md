@@ -1,31 +1,27 @@
-# Awesome Formal Verification
+<div align="center">
+  <a href="https://awesome.re">
+    <img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
+  </a>
+</div>
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome Formal Verification
 
 Welcome to the ultimate list of resources for formal verification/model checking techniques and tools. This repository aims to provide an organized collection of high-quality resources to help professionals, researchers, and enthusiasts stay updated and advance their knowledge in the field.
 
-Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) and [awesome-open-hardware-verification](https://github.com/ben-marshall/awesome-open-hardware-verification)!
+## Contents
 
-## Table of Contents
-
-* Software
-  * [Tools](#tools) which contain or implement verification related functionality
-  * [Languages](#languages) - Languages with good ability to use formal type safety
-* Hardware
-  * [Tools](#hard-tools) which contain or implement verification related functionality
-  * [Languages](#hard-languages) - Languages with good ability to use formal type safety
-
-* [Books](#books) - Textbooks commonly referred to
-* [Courses](#courses) - Online courses (YouTube, university courses)
-* [Testbench Frameworks](#frameworks) which make writing testbenches easier
-* [Verification Guides](#guides) and blog posts on how to actually go about verifying a hardware design
-* [Conferences](#conferences) where new work on open source hardware verification is talked about
-* [More Links](#more) - Video presentations about formal proof of code topics
+* [Software Verification](#software-verification)
+* [Hardware Verification](#hardware-verification)
+* [Blogs](#blogs)
+* [Conferences](#conferences) 
+* [Books](#books)
+* [Courses](#courses)
+* [More](#more)
 
 
-## Software verification
+## Software Verification
 
-### Tools/Proof Assistants
+### Tools
 
 #### Formal Verification
 
@@ -64,12 +60,12 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 
 - [ivy-syntax-highlight](https://github.com/Consensys/ivy-syntax-highlight) - Bare minimum syntax highlight definitions (most likely incomplete) for the Ivy language.
 
-#### Languages
+### Languages
 
 * [ivy](https://kenmcmil.github.io/ivy/) - IVy is a research tool/language intended to allow interactive development of protocols and their proofs of correctness and to provide a platform for developing and experimenting with automated proof techniques.
 - [Caml](https://caml.inria.fr/) - Caml is a general-purpose programming language, designed with program safety and reliability in mind. It is very expressive, yet easy to learn and use. Caml supports functional, imperative, and object-oriented programming styles. It has been developed and distributed by INRIA, a French research institute in computer science and applied mathematics, since 1985. 
 
-## Hardware verification
+## Hardware Verification
 
 ### Tools
 
@@ -145,7 +141,7 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 - [Cocotb Verification IPs](#cocotb-ips) - Various cocotb packages for common interfaces: AXI/Ethernet/PCIE.
 - [RISC-V-TLM](#risc-v-tlm) - A SystemC transaction level model of RISC-V.
 
-#### Languages
+### Languages
 
 * [Idris](https://www.idris-lang.org/) - General purpose pure functional programming language with dependent types.
   * [Idris docs](http://docs.idris-lang.org/en/latest/)
@@ -160,7 +156,7 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 * [Elm](http://elm-lang.org/) - Type-safe functional programming language for declaratively creating web browser-based graphical user interfaces.
 
 
-## Guides & Blogs
+## Blogs
 
 - [Dan Gisselquist Formal Verification Blogs](#dan-gisselquist-formal-verification-blogs) - Blog posts on formal verification.
 - [Verification Gentleman Blog](#verification-gentleman-blog) - Blog on verification topics.
@@ -224,6 +220,3 @@ Inspired by [awesome-provable](https://github.com/awesomo4000/awesome-provable) 
 * [Creating drones that can't be hacked](https://www.youtube.com/watch?v=4oONdV5RYp8)
 * [HACMS: Protecting Military Systems from Hackers](https://www.youtube.com/watch?v=OyqNpn6JpBk)
 
-## Contributing
-
-Your contributions are always welcome! Feel free to submit a pull request with your suggestions.
