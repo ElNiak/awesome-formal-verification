@@ -42,8 +42,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 #### Simulation
 
-* [Panther](https://github.com/ElNiak/PANTHER) - This tool presents a novel approach to bolstering network protocol verification by integrating the Shadow network simulator with the Ivy formal verification tool to check time properties. Furthermore, it extends Ivy's capabilities with a dedicated time module, enabling the verification of complex quantitative-time properties. 
-
+/
 #### Build Systems and Continuous Integration
 
 /
@@ -54,7 +53,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 #### Coverage
 
-* [A Practical Approach to Coverage in Model Checking](https://www.cs.huji.ac.il/~ornak/publications/cav01.pdf) - Scientific paper
+* [A Practical Approach to Coverage in Model Checking](https://www.cs.huji.ac.il/~ornak/publications/cav01.pdf) - Scientific paper.
 
 #### Linting and Parsing
 
@@ -71,16 +70,15 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 #### Formal Verification
 
-* [Symbiyosys](https://symbiyosys.readthedocs.io/en/latest/quickstart.html#prerequisites) - SymbiYosis a front-end driver program for Yosys-based formal hardware verification flows. SymbiYosys provides flows for the following formal tasks: Bounded verification of safety properties (assertions), Unbounded verification of safety properties, Generation of test benches from cover statements, Verification of liveness properties
+* [Symbiyosys](https://symbiyosys.readthedocs.io/en/latest/quickstart.html#prerequisites) - SymbiYosis a front-end driver program for Yosys-based formal hardware verification flows. SymbiYosys provides flows for the following formal tasks: Bounded verification of safety properties (assertions), Unbounded verification of safety properties, Generation of test benches from cover statements, Verification of liveness properties.
 * [riscv-formal](https://github.com/SymbioticEDA/riscv-formal) - A re-usable formal verification framework for RISC-V CPU designs.
-* [MCY](https://github.com/YosysHQ/mcy) - mcy is a new tool to help digital designers and project managers understand and improve testbench coverage. [...] Given a self checking testbench, mcy generates 1000s of mutations by modifying individual signals in a post synthesis netlist. These mutations are then filtered using Formal Verification techniques, keeping only those that can cause an important change in the design's output. All mutated designs are run against the testbench to check that the testbench will detect and fail for a relevant mutation. The testbench can then be improved to get 100% complete coverage
-* [EBMC / CBMC](http://www.cprover.org/ebmc/) - EBMC is a Model Checker for hardware designs. It includes both bounded and unbounded analysis, i.e., it can both discover bugs and is also able to prove the absence of bugs. It can read Netlists (ISCAS89 format), Verilog, System Verilog and SMV files. Properties can be given in LTL or a fragment of System Verilog Assertions
+* [MCY](https://github.com/YosysHQ/mcy) - mcy is a new tool to help digital designers and project managers understand and improve testbench coverage. Given a self checking testbench, mcy generates 1000s of mutations by modifying individual signals in a post synthesis netlist. These mutations are then filtered using Formal Verification techniques, keeping only those that can cause an important change in the design's output. All mutated designs are run against the testbench to check that the testbench will detect and fail for a relevant mutation. The testbench can then be improved to get 100% complete coverage.
+* [EBMC / CBMC](http://www.cprover.org/ebmc/) - EBMC is a Model Checker for hardware designs. It includes both bounded and unbounded analysis, i.e., it can both discover bugs and is also able to prove the absence of bugs. It can read Netlists (ISCAS89 format), Verilog, System Verilog and SMV files. Properties can be given in LTL or a fragment of System Verilog Assertions.
 * [seL4](https://sel4.systems/) - Operating-system kernel with an end-to-end proof of implementation correctness and security enforcement.
   * [brochure](https://sel4.systems/Info/Docs/seL4-brochure.pdf)
   * [white paper](https://sel4.systems/Info/Docs/GD-NICTA-whitepaper.pdf)
-* [Certikos](http://flint.cs.yale.edu/certikos/) - Certified Kit Operating System.
-  * [Certified OS Kernels](http://flint.cs.yale.edu/certikos/)
-* [Compcert](http://compcert.inria.fr/) - Formally verified compiler for C.
+* [Certikos](http://flint.cs.yale.edu/certikos/) - Certified Kit Operating System. Formally verified compiler for C.
+* [Compcert](http://compcert.inria.fr/) 
   * [C compiler](http://compcert.inria.fr/download.html)
 * [Bedrock](http://plv.csail.mit.edu/bedrock/) - Coq library for verification.
   * [tutorial pdf](http://plv.csail.mit.edu/bedrock/tutorial.pdf)
@@ -97,7 +95,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 #### Build Systems and Continuous Integration
 
 * [LibreCores CI](https://www.librecores.org/static/librecores-ci) - LibreCores CI is a service, which provides Continuous Integration of projects being hosted on LibreCores. The objective of the service is to improve the contributor experience and to increase trust to projects by providing automated testing and health metrics of the projects.
-* [FuseSoc](https://github.com/olofk/fusesoc) - FuseSoC is an award-winning package manager and a set of build tools for HDL (Hardware Description Language) code. Its main purpose is to increase reuse of IP (Intellectual Property) cores and be an aid for creating, building and simulating SoC solutions
+* [FuseSoc](https://github.com/olofk/fusesoc) - FuseSoC is an award-winning package manager and a set of build tools for HDL (Hardware Description Language) code. Its main purpose is to increase reuse of IP (Intellectual Property) cores and be an aid for creating, building and simulating SoC solutions.
 
 #### Test / Program / Code Generators
 
@@ -118,28 +116,26 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 #### Testbench Frameworks
 
-* [cocotb](#cocotb) - Python based testbench environment for many simulators.
-  * [python-uvm](#python-uvm) - A port of UVM 1.2 to Python and cocotb.
-  * [cocotb-coverage](#cocotb-coverage) - Functional coverage and constrained randomization extensions for Cocotb.
-  * [Verification IPs](#cocotb-ips) - Various cocotb packages for common interfaces: AXI/Ethernet/PCIE.
-* [fvutils/pyvsc](#fvutilspyvsc) - Python packages providing a library for verification stimulus and coverage.
-* [chiselverify](#chisel-verify) - UVM-like verification for the Chisel HDL.
-* [UVVM](#uvvm) - Universal VHDL Verification Methodology.
-* [OSVVM](#osvvm) - Open Source VHDL Verification Methodology.
-* [VUnit](#vunit) - Unit testing framework for VHDL/SystemVerilog.
-* [V3](#v3) - Verification framework.
-* [ROHD Verification Framework](#rohd-verification-framework) - Hardware verification framework upon ROHD for building and executing testbenches.
+* [cocotb](https://www.cocotb.org/) - Python based testbench environment for many simulators.
+* [cocotb-coverage](https://cocotb-coverage.readthedocs.io) - Functional coverage and constrained randomization extensions for Cocotb.
+* [fvutils/pyvsc](https://github.com/fvutils/pyvsc) - Python packages providing a library for verification stimulus and coverage.
+* [chiselverify](https://github.com/chiselverify/chiselverify) - UVM-like verification for the Chisel HDL.
+* [UVVM](https://github.com/UVVM/UVVM) - Universal VHDL Verification Methodology.
+* [OSVVM](https://osvvm.org/) - Open Source VHDL Verification Methodology.
+* [VUnit](https://vunit.github.io/) - Unit testing framework for VHDL/SystemVerilog.
+* [V3](https://pmc.ncbi.nlm.nih.gov/articles/PMC9806438/) - Verification framework.
+* [ROHD Verification Framework](https://github.com/intel/rohd-vf) - Hardware verification framework upon ROHD for building and executing testbenches.
 
 #### Components / VIPs
 
-* [uvm_axi](#uvm_axi) - AXI bus verification IP.
-* [AXI Bus Formal VIP](#axi-bus-formal-vip) - Formal verification IP for AXI bus.
-* [AXI Bus Functional Model tvip-axi](#axi-bus-functional-model---tvip-axi) - Functional model for AXI bus.
-* [AXI SystemVerilog Modules and Verification Infrastructure](#axi-systemverilog-modules-and-verification-infrastructure) - SystemVerilog modules and verification infrastructure for AXI bus.
-* [APB Bus Functional Model tvip-apb](#apb-bus-functional-model---tvip-apb) - Functional model for APB bus.
-* [USB 1.1 Test Suite](#antmicro-usb-test-suite) - Test suite for USB 1.1.
-* [Cocotb Verification IPs](#cocotb-ips) - Various cocotb packages for common interfaces: AXI/Ethernet/PCIE.
-* [RISC-V-TLM](#risc-v-tlm) - A SystemC transaction level model of RISC-V.
+* [uvm_axi](https://github.com/funningboy/uvm_axi) - AXI bus verification IP.
+* [AXI Bus Formal VIP](https://github.com/kumarrishav14/AXI) - Formal verification IP for AXI bus.
+* [AXI Bus Functional Model tvip-axi](https://github.com/taichi-ishitani/tvip-axi) - Functional model for AXI bus.
+* [AXI SystemVerilog Modules and Verification Infrastructure](https://github.com/pulp-platform/axi) - SystemVerilog modules and verification infrastructure for AXI bus.
+* [APB Bus Functional Model tvip-apb](https://github.com/taichi-ishitani/tvip-apb) - Functional model for APB bus.
+* [USB 1.1 Test Suite](https://github.com/antmicro/usb-test-suite-testbenches) - Test suite for USB 1.1.
+* [Cocotb Verification IPs](https://github.com/themperek/cocotb-vivado) - Various cocotb packages for common interfaces: AXI/Ethernet/PCIE.
+* [RISC-V-TLM](https://github.com/mariusmm/RISC-V-TLM) - A SystemC transaction level model of RISC-V.
 
 ### Languages
 
@@ -148,7 +144,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
   * [Idris tutorial](http://docs.idris-lang.org/en/latest/tutorial/index.html#tutorial-index)
   * [Theorem proving with Idris tutorial](http://docs.idris-lang.org/en/latest/proofs/index.html)
 * [Agda](http://wiki.portal.chalmers.se/agda/pmwiki.php) - Dependently typed functional programming language.
-  * [Agda Github](https://github.com/agda/agda)
+  * [Agda GitHub](https://github.com/agda/agda)
   * [Agda User Manual](http://agda.readthedocs.io/en/v2.5.2/)
 * [UR/Web](http://www.impredicative.com/ur/) - Ur plus a special standard library for dynamic web applications.
 * [Haskell](https://www.haskell.org/) - An advanced, purely functional programming language.
@@ -164,10 +160,10 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 ## Conferences
 
-* [ORCONF](#orconf) - Open Source Digital Design Conference.
-* [OSDA](#osda) - Open Source Digital Architecture workshop.
-* [CHIPS Alliance Workshop on Open Source Design Verification](#chips-alliance-workshop-on-open-source-design-verification) - Workshop on open source design verification.
-* [Workshop on Open-Source EDA Technology (WOSET)](#workshop-on-open-source-eda-technology-woset) - Workshop on open-source EDA technology.
+* [ORCONF](https://orconf.org) - Open Source Digital Design Conference.
+* [OSDA](https://www.offsec.com/courses/soc-200/) - Open Source Digital Architecture workshop.
+* [CHIPS Alliance Workshop on Open Source Design Verification](https://www.chipsalliance.org) - Workshop on open source design verification.
+* [Workshop on Open-Source EDA Technology (WOSET)](https://woset-workshop.github.io) - Workshop on open-source EDA technology.
 
 ## Books
 
