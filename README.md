@@ -41,17 +41,6 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
 
 
-#### Simulation
-
-/
-#### Build Systems and Continuous Integration
-
-/
-
-#### Test / Program / Code Generators
-
-/
-
 #### Coverage
 
 * [A Practical Approach to Coverage in Model Checking](https://www.cs.huji.ac.il/~ornak/publications/cav01.pdf) - Scientific paper.
