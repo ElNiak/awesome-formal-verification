@@ -39,6 +39,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
 * [K Framework](http://www.kframework.org/index.php/Main_Page) - Rewrite-based executable semantic framework.
 * [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
+* [Frama-C](https://frama-c.com/) - Frama-C is an extensible and collaborative platform dedicated to source-code analysis of C software.
 
 
 #### Coverage
