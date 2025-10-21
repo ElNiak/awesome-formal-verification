@@ -33,7 +33,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [SPIN](https://spinroot.com/spin/whatispin.html) -  Spin is a widely used open-source software verification tool. The tool can be used for the formal verification of multi-threaded software applications. The tool was developed at Bell Labs in the Unix group of the Computing Sciences Research Center, starting in 1980, and has been available freely since 1991. Spin continues to evolve to keep pace with new developments in the field. In April 2002 the tool was awarded the ACM System Software Award.
 * [PLASMA Lab](https://sparika.gitbooks.io/plasma-lab-book/) -  PLASMA Lab is a compact, efficient and flexible platform for statistical model checking of stochastic models. Though in an early stage of development. PLASMA Lab, is being integrated into the DALi and DANSE project platforms.
 * [TLA+](https://lamport.azurewebsites.net/tla/tla.html) - TLA+ is a high-level language for modeling programs and systems--especially concurrent and distributed ones.  It's based on the idea that the best way to describe things precisely is with simple mathematics.
-* [Coq](https://coq.inria.fr/) - Formal proof management system.
+* [Rocq](https://rocq-prover.org/) (formerly known as Coq) - Formal proof management system.
 * [Isabelle](https://isabelle.in.tum.de/) - Generic proof assistant.
 * [HOL](https://hol-theorem-prover.org/) - Proof assistant for higher-order logic.
 * [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
@@ -71,7 +71,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [Certikos](http://flint.cs.yale.edu/certikos/) - Certified Kit Operating System. Formally verified compiler for C.
 * [Compcert](http://compcert.inria.fr/) 
   * [C compiler](http://compcert.inria.fr/download.html)
-* [Bedrock](http://plv.csail.mit.edu/bedrock/) - Coq library for verification.
+* [Bedrock](http://plv.csail.mit.edu/bedrock/) - Rocq (previously Coq) library for verification.
   * [tutorial pdf](http://plv.csail.mit.edu/bedrock/tutorial.pdf)
 * [HACMS](https://www.darpa.mil/program/high-assurance-cyber-military-systems) - High-Assurance Cyber Military Systems.
   * [more Darpa "formal" tagged links](https://www.darpa.mil/tag-list?tt=78)
@@ -159,7 +159,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 ## Books
 
 * [The Little Prover](https://mitpress.mit.edu/books/little-prover) - Introduction to inductive proofs for computer programs.
-* [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/) - Textbook on practical engineering with Coq.
+* [Certified Programming with Dependent Types](http://adam.chlipala.net/cpdt/) - Textbook on practical engineering with Rocq (previously Coq).
   * [Latest draft](http://adam.chlipala.net/cpdt/cpdt.pdf)
 * [Software Foundations](https://softwarefoundations.cis.upenn.edu/) - Introduction to the mathematical underpinnings of reliable software.
   * [Vol. 1: Logical Foundations](https://softwarefoundations.cis.upenn.edu/lf-current/index.html)
@@ -171,7 +171,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 ## Courses
 
-* [DeepSpec Summer School](https://www.youtube.com/channel/UC5yB0ZRgc4A99ttkwer-dDw) - Videos about deep specification, Coq tutorials.
+* [DeepSpec Summer School](https://www.youtube.com/channel/UC5yB0ZRgc4A99ttkwer-dDw) - Videos about deep specification, Rocq (previously Coq) tutorials.
 * Adam Chlipala Videos:
   * [Coming Soon Machine-Checked Mathematical Proofs in Everyday Software and Hardware Development](https://media.ccc.de/v/34c3-9105-coming_soon_machine-checked_mathematical_proofs_in_everyday_software_and_hardware_development)
   * [Lecture 1, OPLSS 2015](https://www.youtube.com/watch?v=ORKAy_CHDYM)
