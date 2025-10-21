@@ -39,6 +39,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
 * [K Framework](http://www.kframework.org/index.php/Main_Page) - Rewrite-based executable semantic framework.
 * [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
+* [Why3](https://www.why3.org/) - Why3 is a platform for deductive program verification. It provides a rich language for specification and programming, called WhyML, and relies on external theorem provers, both automated and interactive, to discharge verification conditions.
 * [Frama-C](https://frama-c.com/) - Frama-C is an extensible and collaborative platform dedicated to source-code analysis of C software.
 
 
