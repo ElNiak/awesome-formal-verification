@@ -39,6 +39,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [Isabelle](https://isabelle.in.tum.de/) - Generic proof assistant.
 * [HOL](https://hol-theorem-prover.org/) - Proof assistant for higher-order logic.
 * [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
+* [Verity](https://github.com/th0rgal/verity) - Lean 4 framework for formally specified and verified smart contracts, with EVM-oriented compilation.
 * [K Framework](http://www.kframework.org/index.php/Main_Page) - Rewrite-based executable semantic framework.
 * [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
 * [Why3](https://www.why3.org/) - Why3 is a platform for deductive program verification. It provides a rich language for specification and programming, called WhyML, and relies on external theorem provers, both automated and interactive, to discharge verification conditions.
@@ -204,4 +205,3 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [seL4 playlist](https://www.youtube.com/playlist?list=PL8UO9ZG39Nx43YCAKGCtj9Rb6p2_3utdc)
 * [Creating drones that can't be hacked](https://www.youtube.com/watch?v=4oONdV5RYp8)
 * [HACMS: Protecting Military Systems from Hackers](https://www.youtube.com/watch?v=OyqNpn6JpBk)
-
