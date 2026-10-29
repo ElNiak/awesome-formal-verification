@@ -47,6 +47,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [Why3](https://www.why3.org/) - Why3 is a platform for deductive program verification. It provides a rich language for specification and programming, called WhyML, and relies on external theorem provers, both automated and interactive, to discharge verification conditions.
 * [Frama-C](https://frama-c.com/) - Frama-C is an extensible and collaborative platform dedicated to source-code analysis of C software.
 * [KERN](https://github.com/newmathphys/kern) - Zero-trust verification gateway: a claim is admitted only with machine evidence. It re-checks every Z3 `unsat` proof DAG inside its own Zig kernel, records verdicts in a Belnap B4 lattice, ships 42 Lean 4 theorems (0 `sorry`), and verifies `@kern:requires`/`@kern:ensures` contracts in Python, Zig, C and Rust (including i32 overflow and division by zero). Source-available under the PolyForm Noncommercial 1.0.0 licence.
+* [ZENOS](https://github.com/zenos-org/zenos) - Open-source desktop OS (Debian 13 + KDE Plasma) whose data-protection decisions (opening sealed files, officer approvals, where file content may flow, what may leave the PC, integrity of the audit ledger) are written in Lean 4 with machine-checked proofs; the services call a program built with `lake build` from the same definitions. What is proved and what is trusted is listed in [FORMAL_VERIFICATION.md](https://github.com/zenos-org/zenos/blob/main/docs/FORMAL_VERIFICATION.md). Unaudited developer preview.
 
 
 #### Coverage
