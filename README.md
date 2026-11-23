@@ -48,6 +48,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [Frama-C](https://frama-c.com/) - Frama-C is an extensible and collaborative platform dedicated to source-code analysis of C software.
 * [KERN](https://github.com/newmathphys/kern) - Zero-trust verification gateway: a claim is admitted only with machine evidence. It re-checks every Z3 `unsat` proof DAG inside its own Zig kernel, records verdicts in a Belnap B4 lattice, ships 42 Lean 4 theorems (0 `sorry`), and verifies `@kern:requires`/`@kern:ensures` contracts in Python, Zig, C and Rust (including i32 overflow and division by zero). Source-available under the PolyForm Noncommercial 1.0.0 licence.
 * [z3cache](https://github.com/z3cache/z3cache) - Drop-in replacement for the `z3` binary that caches solver answers, so that [Verus](https://github.com/verus-lang/verus) proofs already checked in one run or git worktree are not re-proved in another. A cache hit is an exact replay: the same Z3 binary once gave that answer to the same command sequence.
+* [SPARK](https://en.wikipedia.org/wiki/SPARK_(programming_language)) - A subset of [Ada](https://en.wikipedia.org/wiki/Ada_(programming_language)) designed for deductive formal verification, with preconditions, postconditions, loop invariants, and termination variants. Supports modular, incremental verification of absence of runtime errors and functional correctness. The toolchain can be installed through the [Alire](https://alire.ada.dev/) package manager.
 
 
 #### Coverage
