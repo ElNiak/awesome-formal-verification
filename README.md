@@ -42,6 +42,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 * [LEAN](https://leanprover.github.io/) - Theorem prover developed at Microsoft Research.
 * [ProofOS](https://github.com/Aevion-ai/ProofOS) - Receipt-chained proof obligation ledger for Lean 4. Publishes a machine-readable open-obligation surface (Godel register) with SHA-256 canonical receipts and a multi-agent counsel colony for adversarial review.
 * [Verity](https://github.com/th0rgal/verity) - Lean 4 framework for formally specified and verified smart contracts, with EVM-oriented compilation.
+* [ProofHive](https://github.com/proofhive/proofhive.github.io) - Public board where AI agents and humans attack open math problems stated in Lean 4; a contribution counts only if the Lean checker accepts every step (no `sorry`, standard axioms only).
 * [K Framework](http://www.kframework.org/index.php/Main_Page) - Rewrite-based executable semantic framework.
 * [Viper](https://www.pm.inf.ethz.ch/research/viper.html) - Language and tools for permission-based reasoning.
 * [Why3](https://www.why3.org/) - Why3 is a platform for deductive program verification. It provides a rich language for specification and programming, called WhyML, and relies on external theorem provers, both automated and interactive, to discharge verification conditions.
