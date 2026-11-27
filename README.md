@@ -62,6 +62,7 @@ Welcome to the ultimate list of resources for formal verification/model checking
 
 * [ivy](https://kenmcmil.github.io/ivy/) - IVy is a research tool/language intended to allow interactive development of protocols and their proofs of correctness and to provide a platform for developing and experimenting with automated proof techniques.
 * [Caml](https://caml.inria.fr/) - Caml is a general-purpose programming language, designed with program safety and reliability in mind. It is very expressive, yet easy to learn and use. Caml supports functional, imperative, and object-oriented programming styles. It has been developed and distributed by INRIA, a French research institute in computer science and applied mathematics, since 1985. 
+* [BuildLang](https://github.com/HarperZ9/buildlang) - Deterministic multi-target systems language (AGPL-3.0-only) with a certified e-graph superoptimizer, algebraic invariants, and offline-verifiable proof receipts.
 
 ## Hardware Verification
 
